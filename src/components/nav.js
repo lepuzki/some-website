@@ -1,16 +1,16 @@
 import React from "react";
 import "./nav.css";
+import Sharingan from "./sharingan";
 
 export default function Card() {
   return (
     <nav className="nav">
       <div className="left">
-        <img
-          src={`${process.env.PUBLIC_URL}/spin.svg`}
-          alt="Loading spinner"
-          width="80"
-          height="80"
-        />
+        <div className="logo">
+          <a href="https://naruto.fandom.com/wiki/Sharingan" >
+          <Sharingan />
+          </a>
+        </div>
         <h2>Left</h2>
       </div>
 

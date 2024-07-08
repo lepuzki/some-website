@@ -17,7 +17,7 @@
         repeatCount="indefinite"
       />
     </ellipse>
-    <ellipse rx="30" ry="15" stroke="black" stroke-width="2" fill="none" transform="rotate(60)">
+    <ellipse rx="20" ry="15" stroke="black" stroke-width="2" fill="red" transform="rotate(60)">
       <animateTransform
         attributeName="transform"
         attributeType="XML"

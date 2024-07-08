@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  id="testSvg"
+  width="300"
+  height="300"
+  style="border: 1px solid black;">
+  <circle
+    id="testCircle"
+    cx="150"
+    cy="150"
+    r="50"
+    style="fill: blue; stroke: black; stroke-width: 2;" />
+  <rect
+    id="testRect"
+    x="50"
+    y="50"
+    width="50"
+    height="50"
+    style="fill: red; stroke: black; stroke-width: 2;" />
+  <script type="text/javascript"><![CDATA[
+    const svg = document.getElementById('testSvg');
+    const circle = document.getElementById('testCircle');
+    const rect = document.getElementById('testRect');
+
+    svg.addEventListener('mouseover', () => {
+      console.log('Mouse over the SVG');
+    });
+
+    svg.addEventListener('mouseout', () => {
+      console.log('Mouse out of the SVG');
+    });
+
+    circle.addEventListener('mouseover', () => {
+      console.log('Mouse over the circle');
+    });
+
+    circle.addEventListener('mouseout', () => {
+      console.log('Mouse out of the circle');
+    });
+
+    circle.addEventListener('click', () => {
+      console.log('Circle clicked');
+    });
+
+    rect.addEventListener('mouseover', () => {
+      console.log('Mouse over the rectangle');
+    });
+
+    rect.addEventListener('mouseout', () => {
+      console.log('Mouse out of the rectangle');
+    });
+
+    rect.addEventListener('click', () => {
+      console.log('Rectangle clicked');
+    });
+  ]]></script>
+</svg>
